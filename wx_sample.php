@@ -256,7 +256,7 @@ EOD;
     private function execSql($sql)
     {
         try {
-            $pdo = new PDO('mysql:dbname=lublog;host=127.0.0.1;charset=UTF8', 'lublog', 'rUUQpPFBTJ5r3F3W');
+            $pdo = new PDO('mysql:dbname=lublog;host=127.0.0.1;charset=UTF8', 'lublog', 'xx');
             return $pdo->query($sql);
         } catch (Exception $e) {
             echo 'Connection failed: ' . $e->getMessage();
